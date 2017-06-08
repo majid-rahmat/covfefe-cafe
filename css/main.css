@@ -47,9 +47,11 @@ table {
 }
 
 /* Meyer reset ends here */
+
 * {
 	box-sizing: border-box;
 }
+
 
 body {
 	width: 100%;
@@ -78,8 +80,8 @@ body {
 
 .nav-items {
 	border: 1px solid black;
-	width: 50%;
-	margin:0 auto;
+	width: 70%;
+	margin: 0 auto;
 	position: relative;
 	top: 50%;
 	transform: translateY(-9px);
@@ -87,4 +89,19 @@ body {
 
 .nav-items li {
 	display: inline-block;
+	margin-right: 20%;
+	vertical-align: top;
+}
+
+.nav-items li:first-child {
+	margin-left: 3%;
+}
+
+.nav-items li:last-child {
+	margin-right: 0;
+}
+
+.nav-items li a {
+	text-decoration: none;
+	font-size: 1.4rem;
 }
