@@ -52,7 +52,6 @@ table {
 	box-sizing: border-box;
 }
 
-
 body {
 	width: 100%;
 }
@@ -61,6 +60,7 @@ body {
 	width: inherit;
 	height: 120px;
 	border: 1px solid black;
+	position: fixed;
 }
 
 .left-header-logo, .right-header-logo, .nav-bar {
@@ -80,7 +80,7 @@ body {
 
 .nav-items {
 	border: 1px solid black;
-	width: 70%;
+	width: 100%;
 	margin: 0 auto;
 	position: relative;
 	top: 50%;
@@ -94,7 +94,7 @@ body {
 }
 
 .nav-items li:first-child {
-	margin-left: 3%;
+	margin-left: 8%;
 }
 
 .nav-items li:last-child {
@@ -103,5 +103,5 @@ body {
 
 .nav-items li a {
 	text-decoration: none;
-	font-size: 1.4rem;
+	font-size: 1.4em;
 }
