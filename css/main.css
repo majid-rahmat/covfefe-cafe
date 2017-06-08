@@ -75,3 +75,16 @@ body {
 .nav-bar {
 	width: 80%;
 }
+
+.nav-items {
+	border: 1px solid black;
+	width: 50%;
+	margin:0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-9px);
+}
+
+.nav-items li {
+	display: inline-block;
+}
