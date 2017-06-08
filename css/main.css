@@ -47,6 +47,9 @@ table {
 }
 
 /* Meyer reset ends here */
+* {
+	box-sizing: border-box;
+}
 
 body {
 	width: 100%;
@@ -58,13 +61,17 @@ body {
 	border: 1px solid black;
 }
 
-.left-header-logo, .right-header-logo {
+.left-header-logo, .right-header-logo, .nav-bar {
 	border: 1px solid black;
-	width: 10%;
 	display: inline-block;
 	height: 100%;
+	float: left;
 }
 
-.right-header-logo {
-	float: right;
+.left-header-logo, .right-header-logo {
+	width: 10%;
+}
+
+.nav-bar {
+	width: 80%;
 }
