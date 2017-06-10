@@ -64,7 +64,6 @@ body {
 }
 
 .left-header-logo, .right-header-logo, .nav-bar {
-	border: 1px solid black;
 	display: inline-block;
 	height: 100%;
 	float: left;
@@ -76,10 +75,15 @@ body {
 
 .nav-bar {
 	width: 80%;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(0deg, black, dimgrey); /* For Safari 5.1 to 6.0 */
+    background:    -moz-linear-gradient(0deg, black, dimgrey); /* For Firefox 3.6 to 15 */
+    background:      -o-linear-gradient(0deg, black, dimgrey); /* For Opera 11.1 to 12.0 */
+    background:         linear-gradient(0deg, black, dimgrey); /* Standard syntax */
+
 }
 
 .nav-items {
-	border: 1px solid black;
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -89,8 +93,7 @@ body {
 
 .nav-items li {
 	display: inline-block;
-	margin-right: 20%;
-	vertical-align: top;
+	margin-right: 20%;	
 }
 
 .nav-items li:first-child {
@@ -104,4 +107,25 @@ body {
 .nav-items li a {
 	text-decoration: none;
 	font-size: 1.4em;
+	color: #FFF;
+	font-family: sans-serif;
+}
+
+.nav-items li a:hover {
+	cursor: crosshair;
+}
+
+.row {
+	text-align: center;
+	height: 700px;
+	background: url(../assets/pexels-photo.jpeg);
+	background-attachment: cover;
+	font-family: 'Yantramanav', sans-serif;
+	color: #FFF;
+	padding-top: 200px;
+}
+
+.row h1 {
+	font-size: 8rem;
+	font-weight: 300;
 }
