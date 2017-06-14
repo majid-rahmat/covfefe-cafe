@@ -61,6 +61,7 @@ body {
 	height: 120px;
 	border: 1px solid black;
 	position: fixed;
+	z-index: 9999;
 }
 
 .left-header-logo, .right-header-logo, .nav-bar {
@@ -115,17 +116,88 @@ body {
 	cursor: crosshair;
 }
 
-.row {
+.home-background-image {
 	text-align: center;
-	height: 700px;
-	background: url(../assets/pexels-photo.jpeg);
-	background-attachment: cover;
+	height: 550px;
+	width: 100%;
+	background-image: url(../assets/pexels-photo.jpeg);
+	background-size: cover;
 	font-family: 'Yantramanav', sans-serif;
 	color: #FFF;
-	padding-top: 200px;
+	padding-top: 250px;
+
 }
 
-.row h1 {
+.home-background-image h1 {
 	font-size: 8rem;
-	font-weight: 300;
 }
+
+.home-feature-area {
+	width: 100%;
+	height: 900px;
+	padding-top: 20px;
+	background-color: dimgrey;
+}
+
+.menu-ref, .about-ref, .location-ref {
+	width: 60%;
+	height: 250px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border: 1px solid black;
+	background-color: #FFF;
+}
+
+
+.menu-ref img {
+	float: left;
+}
+
+.menu-ref-text {
+	width: 50%;
+	float: right;
+	text-align: center;
+	font-family: "Yantramanav", sans-serif;
+	font-size: 1.5rem;
+	padding-top: 10px;
+}
+
+.menu-ref-btn {
+	width: 20%;
+	height: 60px;
+	clear: both;
+	position: relative;
+	left: 15%;
+	margin-top: 30px;
+	border-radius: 10%;
+	font: 1.5rem "Yantramanov", sans-serif; 
+}
+
+/* Containing floated elements mafucka */
+.fixed-bar::before,
+.fixed-bar::after,
+.menu-ref::before,
+.menu-ref::after,
+.location-ref::before,
+.location-ref::after
+.about-ref::before,
+.about-ref::after {
+  content: "";
+  display: table;
+}
+
+.fixed-bar::after,
+.menu-ref::after,
+.location-ref::after,
+.about-ref::after {
+  clear: both;
+}
+
+.fixed-bar,
+.menu-ref,
+.location-ref,
+.about-ref {
+  clear: both;
+  *zoom: 1;
+}
+/* contain complete mafucka */
