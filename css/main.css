@@ -172,6 +172,42 @@ body {
 	font: 1.5rem "Yantramanov", sans-serif; 
 }
 
+.mouth-foot {
+	width: 80%;
+	height: 110px;
+	margin: 30px 10%;
+}
+
+.mouth-foot h4, .mouth-foot p {
+	display: inline-block;
+	margin-right: 20%;
+}
+
+.copyright-text {
+	line-height: 100px;
+	vertical-align: text-top;
+	margin-right: 10%;
+}
+
+.mouth-foot h4 {
+	margin-right: 10%;
+	font: 2rem/3rem "Yantramanov", sans-serif;
+	text-transform: uppercase;
+}
+
+.social-media-icons {
+	display: inline-block;
+	width: 30%;
+}
+.social-media-icons li {
+	display: inline-block;
+	padding-right: 15%;
+}	
+
+.social-media-icons li:last-child {
+	padding-right: 0;
+}
+
 /* Containing floated elements mafucka */
 .fixed-bar::before,
 .fixed-bar::after,
