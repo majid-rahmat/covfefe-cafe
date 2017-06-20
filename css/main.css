@@ -59,7 +59,6 @@ body {
 .fixed-bar {
 	width: inherit;
 	height: 120px;
-	border: 1px solid black;
 	position: fixed;
 	z-index: 9999;
 }
@@ -234,7 +233,8 @@ a:hover {
 .location-ref::before,
 .location-ref::after
 .about-ref::before,
-.about-ref::after {
+.about-ref::after
+{
   content: "";
   display: table;
 }
