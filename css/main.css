@@ -113,7 +113,7 @@ body {
 }
 
 .nav-items li a:hover {
-	cursor: crosshair;
+	color: red;
 }
 
 .home-background-image {
@@ -145,6 +145,8 @@ body {
 	margin: 0 auto;
 	margin-bottom: 40px;
 	background-color: #FFF;
+	font-family: "Yantramanav", sans-serif;
+	font-size: 1.5rem;
 }
 
 
@@ -156,21 +158,29 @@ body {
 	width: 50%;
 	float: right;
 	text-align: center;
-	font-family: "Yantramanav", sans-serif;
-	font-size: 1.5rem;
 	padding-top: 10px;
 }
 
 .ref-btn {
-	width: 20%;
-	height: 60px;
+	border: 1px solid black;
+	display: inline-block;
 	clear: both;
+	width: 20%;
+	height: 50px;
 	position: relative;
 	left: 15%;
-	margin-top: 30px;
-	border-radius: 10%;
-	font: 1.5rem "Yantramanov", sans-serif; 
+	margin-top: 40px;
+	text-align: center;
+	border-radius: 50%;
+}		
+
+.ref-btn a {
+	font: 1.5rem/50px "Times New Roman", sans-serif;
+	text-decoration: none;
 }
+	
+
+
 
 .mouth-foot {
 	width: 80%;
@@ -206,6 +216,14 @@ body {
 
 .social-media-icons li:last-child {
 	padding-right: 0;
+}
+
+a {
+	color: black;
+}
+
+a:hover {
+	color: red;
 }
 
 /* Containing floated elements mafucka */
