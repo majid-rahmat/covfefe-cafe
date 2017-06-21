@@ -76,10 +76,10 @@ body {
 .nav-bar {
 	width: 80%;
     background: red; /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(0deg, black, dimgrey); /* For Safari 5.1 to 6.0 */
-    background:    -moz-linear-gradient(0deg, black, dimgrey); /* For Firefox 3.6 to 15 */
-    background:      -o-linear-gradient(0deg, black, dimgrey); /* For Opera 11.1 to 12.0 */
-    background:         linear-gradient(0deg, black, dimgrey); /* Standard syntax */
+    background: -webkit-linear-gradient(90deg, #a8a8a8, #666, #a8a8a8); /* For Safari 5.1 to 6.0 */
+    background:    -moz-linear-gradient(90deg, #a8a8a8, #666, #a8a8a8); /* For Firefox 3.6 to 15 */
+    background:      -o-linear-gradient(90deg, #a8a8a8, #666, #a8a8a8); /* For Opera 11.1 to 12.0 */
+    background:         linear-gradient(90deg, #a8a8a8, #666, #a8a8a8); /* Standard syntax */
 
 }
 
@@ -97,7 +97,7 @@ body {
 }
 
 .nav-items li:first-child {
-	margin-left: 8%;
+	margin-left: 5%;
 }
 
 .nav-items li:last-child {
@@ -106,13 +106,13 @@ body {
 
 .nav-items li a {
 	text-decoration: none;
-	font-size: 1.4em;
+	font-size: 1.7em;
 	color: #FFF;
-	font-family: sans-serif;
+	font-family: "Kaushan Script", sans-serif;
 }
 
 .nav-items li a:hover {
-	color: #F8585A;
+	color: #000;
 }
 
 .home-background-image {
@@ -121,28 +121,27 @@ body {
 	width: 100%;
 	background-image: url(../assets/pexels-photo-164653.jpeg);
 	background-size: cover;
-	font-family: 'Yantramanav', sans-serif;
-	color: #FFF;
-	padding-top: 250px;
-
 }
 
 .home-background-image h1 {
-	font-size: 8rem;
+	font-size: 8.5rem;
+	font-family: 'Kaushan Script', sans-serif;
+	color: #FFF;
+	padding-top: 220px;
 }
 
 .home-feature-area {
 	width: 100%;
 	height: 900px;
 	padding-top: 40px;
-	background-color: dimgrey;
+	background-color: #a8a8a8;
 }
 
 .menu-feature-area {
 	width: 100%;
 	height: 1000px;
 	padding-top: 185px;
-	background-color: dimgrey;
+	background-color: #a8a8a8;
 }
 
 .menu-feature-area img {
@@ -158,8 +157,9 @@ body {
 	margin: 0 auto;
 	margin-bottom: 40px;
 	background-color: #FFF;
-	font-family: "Yantramanav", sans-serif;
+	font-family: "Montserrat", sans-serif;
 	font-size: 1.5rem;
+	font-weight: 300;
 }
 
 
@@ -175,7 +175,7 @@ body {
 }
 
 .ref-btn {
-	border: 1px solid black;
+	border: 1px solid #666;
 	display: inline-block;
 	clear: both;
 	width: 20%;
@@ -184,59 +184,72 @@ body {
 	left: 15%;
 	margin-top: 40px;
 	text-align: center;
-	border-radius: 50%;
-}		
+	border-radius: 5%;
+	background-color: #a8a8a8;
+}
 
 .ref-btn a {
-	font: 1.5rem/50px "Times New Roman", sans-serif;
+	font: 1.3em/50px  "Kaushan Script", sans-serif;
 	text-decoration: none;
+	letter-spacing: 0.15rem;
+	color: #FFF;
 }
-	
 
+.ref-btn a:hover {
+	color: #000;
+	font-size: 1.6em;
+}
 
+.bottom-bar {
+	height: 150px;
+	width: inherit;
+	background-color: #666;
+	padding: 30px 10%;
+}
 
 .mouth-foot {
-	width: 80%;
-	height: 110px;
-	margin: 30px 10%;
+	width: 40%;
+	margin: 0 auto;
 }
 
 .mouth-foot h4, .mouth-foot p {
 	display: inline-block;
-	margin-right: 20%;
 }
 
 .copyright-text {
-	line-height: 100px;
-	vertical-align: text-top;
-	margin-right: 10%;
+	padding-top: 40px;
+	color: #FFF;
+	text-align: center;
 }
 
 .mouth-foot h4 {
-	margin-right: 10%;
-	font: 2rem/3rem "Yantramanov", sans-serif;
+	font: 2rem/3rem "Kaushan Script", sans-serif;
 	text-transform: uppercase;
+	font-weight: bolder;
+	color: #FFF;
+	padding-right: 10%;
 }
 
 .social-media-icons {
 	display: inline-block;
-	width: 30%;
 }
+
 .social-media-icons li {
 	display: inline-block;
-	padding-right: 15%;
-}	
+}
 
-.social-media-icons li:last-child {
+
+.fa {
+	color: #FFF;
+	padding-right: 2rem;
+}
+
+.fa:hover {
+	color: #000;
+}
+
+.fa-facebook {
 	padding-right: 0;
-}
-
-a {
-	color: black;
-}
-
-a:hover {
-	color: red;
 }
 
 /* Containing floated elements mafucka */
