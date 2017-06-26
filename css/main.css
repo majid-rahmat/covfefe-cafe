@@ -137,7 +137,7 @@ body {
 	background-color: #a8a8a8;
 }
 
-.menu-feature-area {
+.menu-feature-area, .location-feature-area {
 	width: 100%;
 	height: 1000px;
 	padding-top: 185px;
@@ -197,7 +197,6 @@ body {
 
 .ref-btn a:hover {
 	color: #000;
-	font-size: 1.6em;
 }
 
 .bottom-bar {
