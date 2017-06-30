@@ -303,29 +303,29 @@ body {
 	color: #000;
 }
 
-.bottom-bar {
+.footer {
 	height: 150px;
 	width: inherit;
 	background-color: #666;
 	padding: 30px 10%;
 }
 
-.mouth-foot {
+.footer-container {
 	width: 40%;
 	margin: 0 auto;
 }
 
-.mouth-foot h4, .mouth-foot p {
+.footer-container h4, .footer-container p {
 	display: inline-block;
 }
 
-.copyright-text {
+.footer-copyright-text {
 	padding-top: 40px;
 	color: #FFF;
 	text-align: center;
 }
 
-.mouth-foot h4 {
+.footer-container h4 {
 	font: 2rem/3rem "Kaushan Script", sans-serif;
 	text-transform: uppercase;
 	font-weight: bolder;
@@ -333,11 +333,11 @@ body {
 	padding-right: 10%;
 }
 
-.social-media-icons {
+.footer-container-icon-list {
 	display: inline-block;
 }
 
-.social-media-icons li {
+.footer-container-icon-list li {
 	display: inline-block;
 }
 
