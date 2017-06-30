@@ -56,24 +56,24 @@ body {
 	width: 100%;
 }
 
-.fixed-bar {
+.fixed-nav {
 	width: inherit;
 	height: 120px;
 	position: fixed;
 	z-index: 9999;
 }
 
-.left-header-logo, .right-header-logo, .nav-bar {
+.left-nav-logo, .right-nav-logo, .nav-list-container {
 	display: inline-block;
 	height: 100%;
 	float: left;
 }
 
-.left-header-logo, .right-header-logo {
+.left-nav-logo, .right-nav-logo {
 	width: 10%;
 }
 
-.nav-bar {
+.nav-list-container {
 	width: 80%;
     background: red; /* For browsers that do not support gradients */
     background: -webkit-linear-gradient(90deg, #a8a8a8, #666, #a8a8a8); /* For Safari 5.1 to 6.0 */
@@ -83,7 +83,7 @@ body {
 
 }
 
-.nav-items {
+.nav-list {
 	width: 100%;
 	margin: 0 auto;
 	position: relative;
@@ -91,27 +91,27 @@ body {
 	transform: translateY(-9px);
 }
 
-.nav-items li {
+.nav-list li {
 	display: inline-block;
 	margin-right: 20%;	
 }
 
-.nav-items li:first-child {
+.nav-list li:first-child {
 	margin-left: 5%;
 }
 
-.nav-items li:last-child {
+.nav-list li:last-child {
 	margin-right: 0;
 }
 
-.nav-items li a {
+.nav-list li a {
 	text-decoration: none;
 	font-size: 1.7em;
 	color: #FFF;
 	font-family: "Kaushan Script", sans-serif;
 }
 
-.nav-items li a:hover {
+.nav-list li a:hover {
 	color: #000;
 }
 
@@ -159,7 +159,7 @@ body {
 	width: 80%;
 	margin: 0 auto;
 	height: 440px;
-	margin-bottom: 50px;
+	margin-bottom: 70px;
 	border: 20px solid #666;
 }
 
@@ -356,8 +356,8 @@ body {
 }
 
 /* Containing floated elements mafucka */
-.fixed-bar::before,
-.fixed-bar::after,
+.fixed-nav::before,
+.fixed-nav::after,
 .menu-ref::before,
 .menu-ref::after,
 .location-ref::before,
@@ -369,14 +369,14 @@ body {
   display: table;
 }
 
-.fixed-bar::after,
+.fixed-nav::after,
 .menu-ref::after,
 .location-ref::after,
 .about-ref::after {
   clear: both;
 }
 
-.fixed-bar,
+.fixed-nav,
 .menu-ref,
 .location-ref,
 .about-ref {
