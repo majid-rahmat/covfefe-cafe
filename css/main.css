@@ -255,7 +255,7 @@ body {
 	margin: 0 auto;
 }
 
-.menu-ref, .about-ref, .location-ref {
+.home-feature-container {
 	width: 60%;
 	height: 250px;
 	margin: 0 auto;
@@ -267,18 +267,18 @@ body {
 }
 
 
-.menu-ref img, .about-ref img, .location-ref img {
+.home-feature-container img {
 	float: left;
 }
 
-.menu-ref-text, .about-ref-text, .location-ref-text {
+.home-feature-text {
 	width: 50%;
 	float: right;
 	text-align: center;
 	padding-top: 10px;
 }
 
-.ref-btn {
+.home-feature-btn {
 	border: 1px solid #666;
 	display: inline-block;
 	clear: both;
@@ -292,14 +292,14 @@ body {
 	background-color: #a8a8a8;
 }
 
-.ref-btn a {
+.home-feature-btn a {
 	font: 1.3em/50px  "Kaushan Script", sans-serif;
 	text-decoration: none;
 	letter-spacing: 0.15rem;
 	color: #FFF;
 }
 
-.ref-btn a:hover {
+.home-feature-btn a:hover {
 	color: #000;
 }
 
@@ -358,28 +358,20 @@ body {
 /* Containing floated elements mafucka */
 .fixed-nav::before,
 .fixed-nav::after,
-.menu-ref::before,
-.menu-ref::after,
-.location-ref::before,
-.location-ref::after
-.about-ref::before,
-.about-ref::after
+.home-feature-container::before,
+.home-feature-container::after,
 {
   content: "";
   display: table;
 }
 
 .fixed-nav::after,
-.menu-ref::after,
-.location-ref::after,
-.about-ref::after {
+.home-feature-container {
   clear: both;
 }
 
 .fixed-nav,
-.menu-ref,
-.location-ref,
-.about-ref {
+.home-feature-container {
   clear: both;
   *zoom: 1;
 }
