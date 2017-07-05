@@ -1,0 +1,366 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Meyer reset ends here */
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	width: 100%;
+}
+
+/* Common Nav Bar */
+
+.fixed-nav {
+	width: inherit;
+	height: 120px;
+	position: fixed;
+	z-index: 9999;
+}
+
+.left-nav-logo, .right-nav-logo, .nav-list-container {
+	display: inline-block;
+	height: 100%;
+	float: left;
+}
+
+.left-nav-logo, .right-nav-logo {
+	width: 10%;
+}
+
+.nav-list-container {
+	width: 80%;
+    background: red; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(90deg, #a8a8a8, #666, #a8a8a8); /* For Safari 5.1 to 6.0 */
+    background:    -moz-linear-gradient(90deg, #a8a8a8, #666, #a8a8a8); /* For Firefox 3.6 to 15 */
+    background:      -o-linear-gradient(90deg, #a8a8a8, #666, #a8a8a8); /* For Opera 11.1 to 12.0 */
+    background:         linear-gradient(90deg, #a8a8a8, #666, #a8a8a8); /* Standard syntax */
+
+}
+
+.nav-list {
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	top: 50%;
+	transform: translateY(-9px);
+}
+
+.nav-list li {
+	display: inline-block;
+	margin-right: 20%;	
+}
+
+.nav-list li:first-child {
+	margin-left: 5%;
+}
+
+.nav-list li:last-child {
+	margin-right: 0;
+}
+
+.nav-list li a {
+	text-decoration: none;
+	font-size: 1.7em;
+	color: #FFF;
+	font-family: "Kaushan Script", sans-serif;
+}
+
+.nav-list li a:hover {
+	color: #000;
+}
+
+/* Common Footer */
+
+.footer {
+	height: 150px;
+	width: inherit;
+	background-color: #666;
+	padding: 30px 10%;
+}
+
+.footer-container {
+	width: 40%;
+	margin: 0 auto;
+}
+
+.footer-container h4 {
+	font: 2rem/3rem "Kaushan Script", sans-serif;
+	text-transform: uppercase;
+	font-weight: bolder;
+	color: #FFF;
+	padding-right: 10%;
+}
+
+.footer-container h4, .footer-container p {
+	display: inline-block;
+}
+
+.footer-container-icon-list {
+	display: inline-block;
+}
+
+.footer-container-icon-list li {
+	display: inline-block;
+}
+
+.fa {
+	color: #FFF;
+	padding-right: 2rem;
+}
+
+.fa:hover {
+	color: #000;
+}
+
+.fa-facebook {
+	padding-right: 0;
+}
+
+
+.footer-copyright-text {
+	padding-top: 40px;
+	color: #FFF;
+	text-align: center;
+}
+
+/* Home Page */
+
+.home-background-image {
+	text-align: center;
+	height: 550px;
+	width: 100%;
+	background-image: url(../assets/pexels-photo-164653.jpeg);
+	background-size: cover;
+}
+
+.home-background-image h1 {
+	font-size: 8.5rem;
+	font-family: 'Kaushan Script', sans-serif;
+	color: #FFF;
+	padding-top: 220px;
+}
+
+.home-feature-area {
+	width: 100%;
+	height: 900px;
+	padding-top: 40px;
+	background-color: #a8a8a8;
+}
+
+.home-feature-container {
+	width: 60%;
+	height: 250px;
+	margin: 0 auto;
+	margin-bottom: 40px;
+	background-color: #FFF;
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 300;
+}
+
+.home-feature-container img {
+	float: left;
+}
+
+.home-feature-text {
+	width: 50%;
+	float: right;
+	text-align: center;
+	padding-top: 10px;
+}
+
+.home-feature-btn {
+	border: 1px solid #666;
+	display: inline-block;
+	width: 20%;
+	height: 50px;
+	position: relative;
+	left: 15%;
+	margin-top: 40px;
+	text-align: center;
+	border-radius: 5%;
+	background-color: #a8a8a8;
+}
+
+.home-feature-btn a {
+	font: 1.3em/50px  "Kaushan Script", sans-serif;
+	text-decoration: none;
+	letter-spacing: 0.15rem;
+	color: #FFF;
+}
+
+.home-feature-btn a:hover {
+	color: #000;
+}
+
+/* Menu Page */
+
+.menu-feature-area {
+	width: 100%;
+	height: 1000px;
+	padding-top: 185px;
+	background-color: #a8a8a8;
+}
+
+.menu-feature-area img {
+	display: block;
+	width: auto;
+	height: 750px;
+	margin: 0 auto;
+}
+
+/* About Us Page */
+
+.about-feature-area {
+	width: 100%;
+	height: 1200px;
+	padding-top: 190px;
+	background-color: #a8a8a8;
+}
+
+.about-feature-container {
+	width: 80%;
+	margin: 0 auto;
+	height: 440px;
+	margin-bottom: 70px;
+	border: 20px solid #666;
+}
+
+.about-col-1-3 {
+	display: inline-block;
+	width: 40%;
+	height: 400px;
+}
+
+.about-col-1-3 img {
+	transform: translateY(25%);
+}
+
+.about-col-2-3 {
+	display: inline-block;
+	width: 60%;
+	height: 400px;
+	vertical-align: top;
+	padding: 20px 5% 40px 5%;
+	font-family: "Montserrat", sans-serif;
+	line-height: 1.2rem;
+}
+
+.about-col-2-3 h2 {
+	font-family: "Kaushan Script", sans-serif;
+	text-align: center;
+	font-size: 2rem;
+}
+
+.about-col-2-3 p:first-letter {
+	font-size: 2rem;
+}
+
+.about-left-text {
+	text-align: left;
+}
+
+.about-right-text {
+	text-align: justify;
+}
+				
+/* Contact Page */
+
+.contact-feature-area {
+	width: 100%;
+	height: 750px;
+	padding-top: 120px;
+	background-color: #a8a8a8;
+}
+
+.contact-feature-container {
+	width: 75%;
+	height: 450px;
+	margin: 0 auto;
+	margin-top: 80px;
+}
+
+.contact-col-1-3 {
+	width: 33.333%;
+	height: inherit;
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
+	padding-top: 40px;
+	line-height: 1.5rem;
+	color: #000;
+	opacity: 0.7;
+}
+
+.contact-col-1-3 h3 {
+	font-family: "Kaushan Script", sans-serif;
+}
+
+.contact-col-1-3 h3, .contact-col-1-3 h4 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+.contact-col-1-3 h4, .contact-col-1-3 p {
+	font-family: "Montserrat", sans-serif;
+}
+
+.contact-col-2-3 {
+	width: 66.6666%;
+	height: inherit;
+	display: inline-block;
+	vertical-align: top;
+}
+
+
+
+
